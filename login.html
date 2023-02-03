@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="login.css">
+        <title>Travel.to</title>
+    </head>
+
+    <body background="BG-1.png">
+        <img src="Logo.png" id = "logo" height="30px" width="30px">
+        <h5 id = "name">TRAVEL.to</h5>
+        <p id = "destination">Destinations</p>
+        <p id = "activities">Activities</p>
+        <p id = "aboutUs">About Us</p>
+        <p id = "contact">Contact</p>
+        <img src = "sideMenuBar.png" id = "sideMenuBar" height="22px" width="35px">
+        <div id="userLogin">
+            <img src="userLogin.png" class="loginIMG">
+            <p id="loginText-1">User Login</p>
+        </div>
+        <div id="adminLogin">
+            <img src="adminLogin.png" class="loginIMG">
+            <p id="loginText-2">Admin Login</p>
+        </div>
+        <div id="userLoginBox">
+            <p class="idText">User ID</p>
+            <p class="passwordText">Password</p>
+            <p id="signup">Don't have an account <a href="signup.html">SignUP</a></p>
+            <form>
+                <input id = "userid" type="text" placeholder="User ID">
+                <input id="password" type="password" placeholder="Password">
+                <a href="postloginhome.html"><button id="submit" type="button" placeholder="Login">Login</button></a>
+            </form>
+        </div>
+        <div id="adminLoginBox">
+            <p class="idText2">Admin ID</p>
+            <p class="passwordText2">Password</p>
+            <form>
+                <input id="adminid" type="text" placeholder="Admin ID">
+                <input id="adminPassword" type="password" placeholder="Password">
+                <input type="submit" id="adminSubmit" placeholder="Login">
+            </form>
+        </div>
+    </body>
+</html>
