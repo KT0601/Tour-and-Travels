@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+          font-size: 120%;
+        }
+        form {
+          text-align: center;
+        }
+        label {
+            display: inline-block;
+        }
+        button{
+          margin-left: 5%;
+          margin-top: 5%;
+          border: none;
+          color: black;
+          padding: 16px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+        } 
+        .nav_bar{
+         background-color: aqua;
+         height: 50px;
+        } 
+        .nav-link{
+          margin: 4%;
+          color: orange;
+        } 
+     </style>
+     <div class="nav_bar">
+     <nav id="topnav">
+      <a class="nav-link" href="postlogin.html">Home</a>
+      </nav>
+      </div>
+
+      
+<h2 align="center">Admin Functions</h2>
+<button class="button" onclick="window.location.href = 'AddHotel.html';">Add Hotel</button>
+<button class="button" onclick="window.location.href = 'AddTouristPlace.html';">Add Tourist Place</button>
+<button class="button" onclick="window.location.href = 'DeleteTouristPlace.html';">Delete Tourist Place</button>
+<button class="button" onclick="window.location.href = 'DeleteHotel.html';">Delete Hotel</button>
+</form>
+</body>
+</html>
