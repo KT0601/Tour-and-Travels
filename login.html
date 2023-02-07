@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="login.css">
+        <script src = "login.js"></script>
         <title>Travel.to</title>
     </head>
 
@@ -28,18 +29,18 @@
             <p class="idText">User ID</p>
             <p class="passwordText">Password</p>
             <p id="signup">Don't have an account <a href="signup.html">SignUP</a></p>
-            <form>
-                <input id = "userid" type="text" placeholder="User ID">
-                <input id="password" type="password" placeholder="Password">
-                <a href="postloginhome.html"><button id="submit" type="button" placeholder="Login">Login</button></a>
+            <form name="usrLogin" onsubmit="validateUser()">
+                <input id = "userid" name="usr" type="text" placeholder="User ID">
+                <input id="password" name="pass" type="password" placeholder="Password">
+                <input type="submit" id="submit" placeholder="Login" >
             </form>
         </div>
         <div id="adminLoginBox">
             <p class="idText2">Admin ID</p>
             <p class="passwordText2">Password</p>
-            <form>
-                <input id="adminid" type="text" placeholder="Admin ID">
-                <input id="adminPassword" type="password" placeholder="Password">
+            <form name="adminLogin" onsubmit="validateAdmin()">
+                <input id="adminid" type="text" name="admID" placeholder="Admin ID">
+                <input id="adminPassword" type="password" name="admPass" placeholder="Password">
                 <input type="submit" id="adminSubmit" placeholder="Login">
             </form>
         </div>
