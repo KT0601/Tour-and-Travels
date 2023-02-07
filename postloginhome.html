@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="postloginhome.js"></script>
         <link rel="stylesheet" href="postloginhome.css">
         <title>Travel.to</title>
     </head>
@@ -22,10 +23,10 @@
         <p id="plan">PLAN A TRIP</p>
         <p id="from">FROM</p>
         <p id="to">TO</p>
-        <form>
+        <form name="planTrip">
             <input id="fromInput" type="text" placeholder="FROM">
-            <input id="toInput" type="text" placeholder="TO">
-            <input id="submit" type="submit" placeholder="BROWSE">
+            <input id="toInput" type="text" placeholder="TO" name="to">
+            <button id="submit" type="button" onclick="update()">Browse</button>
         </form>
         <div id="city1">
             <p id="mumbai">MUMBAI</p>
@@ -43,3 +44,4 @@
         </div>
     </body>
 </html>
+
